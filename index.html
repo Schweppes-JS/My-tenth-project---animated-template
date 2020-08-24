@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <!-- Favicon -->
-        <link rel="icon" type="image/png" href="">
+        <link rel="icon" type="image/png" href="https://img.icons8.com/fluent/48/000000/unity.png">
         <!-- Fontawesome -->
         <link rel="stylesheet" href="Libararies/fontawesome-pro-5.14.0-web/css/all.min.css" />
         <!-- AOS CSS -->
@@ -13,6 +13,11 @@
         <!-- Tailwind Library -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
         <title>Animated Template</title>
+        <!-- Navigation script -->
+        <script src="script/navbar.js" defer></script>
+        <!-- AOS script -->
+        <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script defer src="script/script.js"></script>
     </head>
     <body class="text-gray-800 antialiased">
 
@@ -544,21 +549,4 @@
             </div>
         </footer>
     </body>
-    <!-- AOS script -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            delay: 200, // values from 0 to 3000, with step 50ms
-            duration: 1500, // values from 0 to 3000, with step 50ms
-            once: false, // whether animation should happen only once - while scrolling down
-            mirror: false, // whether elements should animate out while scrolling past them
-        });
-    </script>
-    <!-- Navigation script -->
-    <script>
-        function toggleNavbar(collapseID) {
-            document.getElementById(collapseID).classList.toggle("hidden");
-            document.getElementById(collapseID).classList.toggle("block");
-        }
-    </script>
 </html>
